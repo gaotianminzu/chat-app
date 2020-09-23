@@ -38,11 +38,10 @@
   background-color: #2F3E51;
   padding: 0 20px;
   overflow: scroll;
-
 }
 
-.room_name  {
-  padding: 20px 20px 40px;
+.room {
+  padding: 20px 0px 40px;
 }
 .room_name a {
   color: white;
