@@ -1,25 +1,6 @@
-<%# <div class="messages">
-  <div class="one_box">
-    <div class="m_box">
-      <div class="n_box">Tom</div>
-      <div class="d_box">2020/3/31(Wed) 12:43:30</div>
-    </div>
-    <div class="t_box">おはよう</div>
-  </div>
-
-    <div class="one_box">
-    <div class="m_box">
-      <div class="n_box">Tom</div>
-      <div class="d_box">2020/3/31(Wed) 12:43:30</div>
-    </div>
-    <div class="t_box">おはよう</div>
-  </div>
-  
-</div> %>
-
 <div class="message">
   <div class="one_box">
-   <% @messages.each do |message|%>
+
     <div class="m_box">
       <div class="n_box">
       <!-- 投稿したユーザー名情報を出力する -->
@@ -27,13 +8,13 @@
       </div>
       <div class="d_box">
       <!-- 投稿した時刻を出力する -->
-      <%= message.created_at %>
+      <%= l message.created_at %>
       </div>
     </div>
     <div class="t_box">
       <!-- 投稿したメッセージ内容を記述する -->
       <%= message.content %>
     </div>
-   <% end %>
+
   </div>
 </div>
