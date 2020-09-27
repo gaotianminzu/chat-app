@@ -5,22 +5,7 @@
   </div>
 </div>
 <div class="messages">
-  <div class="one_box">
-    <div class="m_box">
-      <div class="n_box">Tom</div>
-      <div class="d_box">2020/3/31(Wed) 12:43:30</div>
-    </div>
-    <div class="t_box">おはよう</div>
-  </div>
-
-    <div class="one_box">
-    <div class="m_box">
-      <div class="n_box">Tom</div>
-      <div class="d_box">2020/3/31(Wed) 12:43:30</div>
-    </div>
-    <div class="t_box">おはよう</div>
-  </div>
-  
+ <% render partial: 'message', collection: @messages %>
 </div>
 
 
